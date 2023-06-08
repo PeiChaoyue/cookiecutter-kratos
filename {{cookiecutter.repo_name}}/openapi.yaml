@@ -25,10 +25,10 @@ paths:
                     content:
                         application/json:
                             schema:
-                                $ref: '#/components/schemas/.helloworld.v1.HelloReply'
+                                $ref: '#/components/schemas/.{{cookiecutter.project_name}}.v1.HelloReply'
 components:
     schemas:
-        .helloworld.v1.HelloReply:
+        .{{cookiecutter.project_name}}.v1.HelloReply:
             type: object
             properties:
                 message:
